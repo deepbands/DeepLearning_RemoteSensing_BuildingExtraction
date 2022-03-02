@@ -8,7 +8,7 @@ docker test
 3. `win+R` and input this code in CMD:
 
 ```shell
-cd deep-learning_-remote-sensing_-building-extraction\
+cd deep-learning_remote-sensing_building-extraction\
 docker compose up --build
 ```
 
