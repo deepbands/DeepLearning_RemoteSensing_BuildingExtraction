@@ -1,4 +1,4 @@
-FROM python:3.8.12-slim-bullseye
+FROM python:3.8.12-bullseye
 LABEL maintainer="geoyee@yeah.net"
 
 RUN mkdir /usr/src/app
@@ -15,3 +15,4 @@ RUN export CPLUS_INCLUDE_PATH=/usr/include/gdal
 RUN export C_INCLUDE_PATH=/usr/include/gdal
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
+RUN pip install GDAL==3.2.2 --no-cache-dir

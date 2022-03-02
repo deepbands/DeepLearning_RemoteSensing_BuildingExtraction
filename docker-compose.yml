@@ -5,6 +5,8 @@ services:
     build: .
     volumes:
       - .:/usr/src/app
+    tty: true
     # ports:
-    #   - 8888:8888
-    # command: bash -c "jupyter notebook --port=8888 --no-browser --ip='0.0.0.0' --allow-root"
+      # - 8888:8888
+    # command: tail -f /bin/bash
+    command: bash -c "python demo.py --tif_path data/test.tif --model_path bisenet_v2_512x512/model.pdmodel && tail -f /usr/src/app/README.md"
