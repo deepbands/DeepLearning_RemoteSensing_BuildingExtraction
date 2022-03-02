@@ -1,0 +1,4 @@
+opencv-python==4.5.2.54
+GDAL==3.2.2
+paddlepaddle==2.2.1
+numpy
